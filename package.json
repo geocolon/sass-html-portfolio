@@ -1,0 +1,22 @@
+{
+  "name": "00_portfolio",
+  "version": "1.0.0",
+  "description": "Sass and Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geocolon/sass-html-portfolio.git"
+  },
+  "author": "George Colon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geocolon/sass-html-portfolio/issues"
+  },
+  "homepage": "https://github.com/geocolon/sass-html-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
