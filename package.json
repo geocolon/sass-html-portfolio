@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Sass and Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "http://geocolon.github.io/sass-html-portfolio",
+  "homepage": "https://github.com/geocolon/sass-html-portfolio#readme",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/geocolon/sass-html-portfolio/issues"
   },
-  "homepage": "https://github.com/geocolon/sass-html-portfolio#readme",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"

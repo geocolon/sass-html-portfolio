@@ -72,6 +72,7 @@ main {
     }
   }
 }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -119,7 +120,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   img {
     width: 100%;
-    border: 3px #fff solid;
+    border: 2px rgb(125, 125, 125) solid;
 
     &:hover {
       opacity: 0.5;
@@ -127,10 +128,35 @@ main {
       @include easeOut;
     }
   }
+  a {
+    color: #000;
+  }
 }
 
 // Button Styles
 .btn {
+  text-align: center;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  color: #000;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: #fff;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #fff;
 }
 
 #main-footer {
