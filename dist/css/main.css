@@ -166,7 +166,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    width: 300px;
+    width: 100%;
     vertical-align: text-top;
     margin-bottom: 1rem;
     border: #f8993a 3px solid; }
@@ -206,6 +206,8 @@ main {
   margin-top: 1rem; }
   .boxes a {
     color: #000; }
+  .boxes div.width-basis {
+    flex-basis: 50%; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -290,6 +292,7 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
+      font-size: 3rem;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,

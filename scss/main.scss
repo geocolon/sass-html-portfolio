@@ -84,7 +84,7 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    width: 300px;
+    width: 100%;
     vertical-align: text-top;
     margin-bottom: 1rem;
     // min-height: 100%;
@@ -143,6 +143,9 @@ main {
   margin-top: 1rem;
   a {
     color: set-text-color($primary-color);
+  }
+  div.width-basis {
+    flex-basis: 50%;
   }
   div {
     font-size: 2rem;
