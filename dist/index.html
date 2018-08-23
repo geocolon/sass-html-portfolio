@@ -56,7 +56,9 @@
             <span class="text-secondary">Colon</span>
         </h1>
         <h2 class="sm-heading">
-            Web Developer, Programmer & Designer
+            <div id="changeText"></div>
+
+            <!-- Web Developer, Programmer & Designer -->
         </h2>
         <div class="icons">
             <a href="https://twitter.com/geo_c_colon" target="_blank">
@@ -74,6 +76,17 @@
     <footer id="main-footer">
         Copyright &copy; 2018
     </footer>
+    <script type="text/javascript">
+        var text = ["Full Stack Developer", "UX/UI Designer", "Visual Artist"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        setInterval(change, 3000);
+        function change() {
+            elem.innerHTML = text[counter];
+            counter++;
+            if (counter >= text.length) { counter = 0; }
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 
