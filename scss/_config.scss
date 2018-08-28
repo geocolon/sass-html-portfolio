@@ -2,12 +2,15 @@ $primary-color: #fff;
 $secondary-color: #f8993a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$home-mobile-image: url(../img/background_mobile.jpg);
+$home-mobileSM-image: url(../img/backgroundSM_mobile.jpg);
+$background-opacity: 0.7;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
+/* Desktop */
 @mixin background {
   @if $show-home-image {
     &#bg-img {
@@ -19,6 +22,52 @@ $background-opacity: 0.9;
         content: "";
         position: absolute;
         top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+/* Mobile */
+@mixin background-mobile {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-mobile-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+/* Mobile Small*/
+@mixin background-mobileSM {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-mobileSM-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
         right: 0;
         width: 100%;
         height: 100%;

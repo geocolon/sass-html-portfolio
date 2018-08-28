@@ -1,3 +1,5 @@
+@import "config";
+
 // WideScreens
 
 @include mediaXL {
@@ -15,10 +17,14 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  body {
+    @include background-mobile;
+  }
+
   main {
     align-items: center;
     text-align: center;
-
+    padding: 0%;
     .lg-heading {
       font-size: 3rem;
       line-height: 1;
@@ -48,9 +54,9 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px;
+      background: url("../img/portrait_small.jpg") no-repeat cover;
+      width: 75px;
+      height: 75px;
     }
   }
 
@@ -72,6 +78,9 @@
 
 // Smartphones
 @include mediaSm {
+  body {
+    @include background-mobileSM;
+  }
   .contact-text-small {
     font-size: 1.2rem;
   }
