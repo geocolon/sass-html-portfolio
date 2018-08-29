@@ -3,6 +3,9 @@
 // WideScreens
 
 @include mediaXL {
+  .nav-link {
+    font-size: 1.5rem;
+  }
   .project {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -10,6 +13,9 @@
 
 // Desktop & Laptops
 @include mediaLg {
+  .nav-link {
+    font-size: 2rem;
+  }
   .project {
     grid-template-columns: repeat(3, 1fr);
   }
