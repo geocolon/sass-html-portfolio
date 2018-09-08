@@ -27,10 +27,14 @@ h3 {
     font-size: 6rem;
   }
 
+  &.md-heading {
+    font-size: 3rem;
+  }
+
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    // background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -52,7 +56,8 @@ header {
 main {
   padding: 4rem;
   // height: 100%;
-  min-height: calc(100vh - 60px);
+  // min-height: calc(100vh - 60px);
+  min-height: calc(80vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -72,28 +77,51 @@ main {
     }
   }
 }
+#contact {
+  background: url(../img/background_contact-light.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: 30vh;
+}
+#work {
+  background: url(../img/background_work-light.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+#about {
+  background: url(../img/background_about.jpg);
+  background-size: cover;
+  max-width: 100%;
+  min-height: 100%;
+}
 
 .about-info {
   display: grid;
   grid-gap: 30px;
+  background: rgba(255, 255, 255, 0.7);
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
+    padding: 0.5rem;
     grid-area: bioimage;
-    margin: auto;
+    // margin: auto;
     width: 100%;
-    vertical-align: text-top;
+    top: 0px;
+    // vertical-align: text-top;
     margin-bottom: 1rem;
     // min-height: 100%;
-    border: $secondary-color 3px solid;
+    // border: $secondary-color 3px solid;
   }
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 
   .job-1 {
@@ -109,7 +137,7 @@ main {
   }
 
   .job {
-    background: lighten($secondary-color, 5);
+    // background: lighten($secondary-color, 5);
     padding: 0.5rem;
     border-bottom: #000 5px solid;
   }
@@ -150,6 +178,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.3);
     @include easeOut;
 
     &:hover {
@@ -233,6 +262,7 @@ main {
 }
 
 #main-footer {
+  font-size: 0.5rem;
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
@@ -246,6 +276,7 @@ main {
 }
 
 .work-details {
+  background: rgba(255, 255, 255, 0.5);
   display: block;
 }
 

@@ -9,8 +9,8 @@ const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State Of Menu
 let showMenu = false;
-
 menuBtn.addEventListener("click", toggleMenu);
+// navItems.addEventListener("click", toggleMenulink);
 
 function toggleMenu() {
   if (!showMenu) {

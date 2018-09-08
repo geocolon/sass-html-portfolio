@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>George Colon | Home</title>
+    <title>George Col&oacute;n | Home</title>
 </head>
 
 <body id="bg-img">
@@ -33,12 +33,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">
+                    <a href="#about" class="nav-link">
                         About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="work.html" class="nav-link">
+                    <a href="#work" class="nav-link">
                         My Work
                     </a>
                 </li>
@@ -54,15 +54,16 @@
     <main id="home">
         <h1 class="lg-heading">
             George
-            <span class="text-secondary">Colon</span>
+            <span class="text-secondary">Col&oacute;n
+            </span>
         </h1>
         <h2 class="sm-heading">
             <div id="changeText"></div>
             <!-- Web Developer, Programmer & Designer -->
         </h2>
         <div class="icons">
-            <a href="https://twitter.com/geo_c_colon" target="_blank">
-                <i class="fab fa-twitter fa-2x"></i>
+            <a class="contact-text-small" href="mailto:george@georgecolon.com">
+                <i class="fas fa-envelope fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/geocolon/" target="_blank">
                 <i class="fab fa-linkedin fa-2x"></i>
@@ -70,14 +71,152 @@
             <a href="https://github.com/geocolon" target="_blank">
                 <i class="fab fa-github fa-2x"></i>
             </a>
-            <a href="./work.html">
-                <i class="fas fa-code fa-2x"></i> <strong><span style="font-size:2rem;">Work</span></strong>
+            <a href="https://twitter.com/geo_c_colon" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
             </a>
+            <!-- <a href="./work.html">
+                <i class="fas fa-code fa-2x"></i> <strong><span style="font-size:2rem;">Work</span></strong>
+            </a> -->
         </div>
 
     </main>
+    <main id="work">
+        <h3 class="md-heading">
+            My
+            <span class="text-secondary">Work</span>
+            </h1>
+            <h2 class="sm-heading">
+            </h2>
+            <div class="project">
+
+                <div class="item">
+
+                    <a href="https://m-socket-messenger.herokuapp.com/" target="_blank">
+                        <img src="img/projects/project1.jpg" alt="M socket messegner">
+
+                    </a>
+                    <div class="work-details">
+                        This is an application uses Web Socket (Socket.io) technology to create a person to person(s) instant messenger web app.
+                        The frontend is powered by React, Redux, Socket.io client. The server is a NodeJS Express server,
+                        using MongoDB and Passport for creating an account.
+                    </div>
+
+                    <a href="https://m-socket-messenger.herokuapp.com/" class="btn-light" target="_blank">
+                        <i class="fa fa-eye"></i> M&#8226;Socket
+                    </a>
+
+                    <a href="https://github.com/geocolon/websocket-07-02-2018" class="btn-light" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <!-- <button class="toggle_details btn-light" onclick="toggleDetails(0)">Toggle Details</button> -->
+
+                </div>
+
+                <div class="item">
+                    <a href="https://new-stickynote.herokuapp.com/" target="_blank">
+                        <img src="img/projects/project2.jpg" alt="Sticky Note">
+                    </a>
+                    <div class="work-details">
+                        I wanted to create an application that seemed liked post it notes. I love using post it notes in my work to orient myself
+                        on a project but I always find that they are easily lost and usually in one place. Making this application
+                        solved having my notes saved to the cloud so I can have access to our post it notes. </div>
+
+                    <a href="https://new-stickynote.herokuapp.com/" class="btn-light" target="_blank">
+                        <i class="fa fa-eye"></i> Sticky Note
+                    </a>
+                    <a href="https://github.com/geocolon/stickyNoteApp" class="btn-light" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <!-- <button class="toggle_details btn-light" onclick="toggleDetails(1)">Toggle Details</button> -->
+                </div>
+                <div class="item">
+                    <a href="https://simplebookmark.netlify.com/" target="_blank">
+
+                        <img src="img/projects/project5.jpg" alt="UX Design Kit">
+                        <div class="work-details">
+                            With this web application, you can save a website as a bookmark to a list and add your own titles and/or descriptions.
+                        </div>
+                    </a>
+                    <a href="https://simplebookmark.netlify.com/" class="btn-light" target="_blank">
+                        <i class="fa fa-eye"></i> Simple Bookmark
+                    </a>
+
+                    <a href="https://github.com/geocolon/bookmark-george-03-01-2018" class="btn-light" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <!-- <button class="toggle_details btn-light" onclick="toggleDetails(4)">Toggle Details</button> -->
+
+
+                </div>
+
+
+                <div class="item">
+                    <a href="https://uxdesignkit.com/" target="_blank">
+
+                        <img src="img/projects/project3.jpg" alt="UX Design Kit">
+                    </a>
+                    <div class="work-details">
+                        I created this WordPress website for a printable guide to understanding ux design. Created by Noel Saw, David Nguyen, and
+                        Shri Jambekhar. UX Design Kit is an all-in-one User Experience process workbook.
+                    </div>
+                    <a href="https://uxdesignkit.com/" class="btn-light" target="_blank">
+                        <i class="fa fa-eye"></i> UX Design Kit
+                    </a>
+                    <!-- <a class="toggle_details btn-light" onclick="toggleDetails(3)">Details</a> -->
+
+
+
+                </div>
+
+    </main>
+    <main id="about">
+        <h2 class="md-heading">
+            About
+            <span class="text-secondary">Me</span>
+        </h2>
+        <h2 class="sm-heading">
+            Hello, it's good to meet you!
+        </h2>
+        <div class="about-info">
+            <img class="bio-image" src="img/Profile_picture.jpg" alt="Picture for George Colon" />
+            <div class="bio">
+                <h3 class="text-secondary">What I know
+                </h3>
+                <p>I am originally from Brooklyn, New York, I moved to Los Angeles, California to be a part of the tech industry.
+                    I want to change the world the way that California tech companies have been changing the world with its
+                    great software companies and innovative products.
+                </p>
+            </div>
+            <div class="job job-1">
+                <h3>Dynamo Designs</h3>
+                <h6>Full-Stack developer</h6>
+                <p>A business name created and owned by myself for web development purposes. I utilize Amazon DynamoDB flexible
+                    NoSQL database services for consultations and full-stack contract work.
+                </p>
+            </div>
+            <div class="job job-2">
+                <h3>Verizon Wireless</h3>
+                <h6>Contract Frontend Web Developer</h6>
+                <p>
+                    Created responsive marquees, web pages and banners with HTML, CSS, and JavaScript on Adobe Experience Manager for B2C and
+                    B2B customers. Utilized JSON to connect Verizon’s database of phones and prices to customer facing sales
+                    pages. Debugged defective post-launch web pages for Verizon’s campaigns.
+                </p>
+            </div>
+            <div class="job job-3">
+                <h3>Neochrome</h3>
+                <h6>Web Designer</h6>
+                <p>
+                    User Experience Designer, and WordPress Web Designer. Duties include creating user journeys, personas, and wireframes with
+                    Adobe Illustrator for Neochrome’s clients. Set up and maintain content on multiple WordPress-powered
+                    sites. Assist with projects and managing them with Basecamp, and Trello.
+
+                </p>
+            </div>
+        </div>
+    </main>
     <footer id="main-footer">
-        Copyright &copy; 2018
+        George Col&oacute;n | &copy; 2018
     </footer>
     <script type="text/javascript">
         var text = ["Full Stack Developer", "UX/UI Designer", "Visual & Graphic Artist"];
