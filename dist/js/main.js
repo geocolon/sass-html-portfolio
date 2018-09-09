@@ -10,7 +10,6 @@ const navItems = document.querySelectorAll(".nav-item");
 // Set Initial State Of Menu
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
-// navItems.addEventListener("click", toggleMenulink);
 
 function toggleMenu() {
   if (!showMenu) {
@@ -31,5 +30,40 @@ function toggleMenu() {
 
     // Set Menu State
     showMenu = false;
+  }
+}
+// To close menu after click
+navItems.forEach(item =>
+  item.addEventListener("click", function() {
+    console.log("Here");
+
+    if (!showMenu) {
+      menuBtn.classList.add("close");
+      menu.classList.add("show");
+      menuNav.classList.add("show");
+      menuBranding.classList.add("show");
+      navItems.forEach(item => item.classList.add("show"));
+
+      // Set Menu State
+      showMenu = true;
+    } else {
+      menuBtn.classList.remove("close");
+      menu.classList.remove("show");
+      menuNav.classList.remove("show");
+      menuBranding.classList.remove("show");
+      navItems.forEach(item => item.classList.remove("show"));
+
+      // Set Menu State
+      showMenu = false;
+    }
+  })
+);
+// To hide element
+function detailTog(desId) {
+  var x = document.getElementById(desId);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }

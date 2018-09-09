@@ -116,19 +116,6 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(255, 255, 255, 0.7); }
-  body#contact-img {
-    background: url(../img/contact.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#contact-img:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(255, 255, 255, 0.7); }
 
 h1,
 h2,
@@ -147,7 +134,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+    padding: 0.2rem 0.4rem; }
 
 a {
   color: #fff;
@@ -162,10 +149,11 @@ header {
   color: #f8993a; }
 
 main {
-  padding: 4rem;
+  padding: 4rem 1rem;
   min-height: calc(80vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    padding-bottom: 150px; }
     main .icons a {
       padding: 0.4rem;
       color: #000; }
@@ -177,11 +165,17 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+#changeText h2 {
+  padding-left: 0px; }
+
+#contact-header {
+  padding-top: 5rem; }
+
 #contact {
   background: url(../img/background_contact-light.jpg);
   background-size: cover;
   max-width: 100%;
-  height: 30vh; }
+  height: 1000px; }
 
 #work {
   background: url(../img/background_work-light.jpg);
@@ -322,7 +316,7 @@ main {
 
 .work-details {
   background: rgba(255, 255, 255, 0.5);
-  display: block; }
+  display: none; }
 
 /* Desktop */
 /* Mobile */
@@ -354,10 +348,15 @@ main {
       height: 100%;
       z-index: -1;
       background: rgba(255, 255, 255, 0.7); }
+  main#contact {
+    background: url(../img/background_contact-light.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 1000px; }
   main {
     align-items: center;
     text-align: center;
-    padding: 0%; }
+    padding: 3rem 1rem; }
     main .lg-heading {
       font-size: 3rem;
       line-height: 1;
@@ -404,7 +403,13 @@ main {
       background: rgba(255, 255, 255, 0.7); }
   .contact-text-small {
     font-size: 1.2rem; }
+  main {
+    padding: 3rem 1rem; }
   main#home h1 {
     margin-top: 10vh; }
+  #contact {
+    height: 100%; }
+  .lg-heading {
+    padding-top: 1rem; }
   .project {
     grid-template-columns: 1fr; } }

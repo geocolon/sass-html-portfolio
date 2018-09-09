@@ -1,10 +1,12 @@
 $primary-color: #fff;
 $secondary-color: #f8993a;
 $show-home-image: true;
+$show-contact-image: true;
 $home-image: url(../img/background.jpg);
 $home-mobile-image: url(../img/background_mobile.jpg);
 $home-mobileSM-image: url(../img/backgroundSM_mobile.jpg);
-$contact-image: url(../img/contact.jpg);
+
+$contact-mobileSM-image: url(../img/background_contact-light_mobile.jpg);
 $background-opacity: 0.7;
 
 @mixin easeOut {
@@ -16,23 +18,6 @@ $background-opacity: 0.7;
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-
-    &#contact-img {
-      background: $contact-image;
       background-attachment: fixed;
       background-size: cover;
 
@@ -78,6 +63,28 @@ $background-opacity: 0.7;
   @if $show-home-image {
     &#bg-img {
       background: $home-mobileSM-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+@mixin contact-background-mobileSM {
+  @if $show-contact-image {
+    &#contact {
+      background: $contact-mobileSM-image;
       background-attachment: fixed;
       background-size: cover;
 
