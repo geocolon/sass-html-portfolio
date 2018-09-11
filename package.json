@@ -18,6 +18,7 @@
     "url": "https://github.com/geocolon/sass-html-portfolio/issues"
   },
   "dependencies": {
+    "fullpage.js": "^3.0.2",
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }

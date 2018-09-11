@@ -115,7 +115,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(255, 255, 255, 0.7); }
+      background: rgba(255, 255, 255, 0.5); }
 
 h1,
 h2,
@@ -150,7 +150,8 @@ header {
 
 main {
   padding: 4rem 1rem;
-  min-height: calc(80vh - 60px); }
+  min-height: 100vh;
+  border-bottom: solid #fff 1px; }
   main .icons {
     margin-top: 1rem;
     padding-bottom: 10%; }
@@ -204,7 +205,8 @@ main {
   .about-info .bio {
     grid-area: bio;
     padding: 0.5rem;
-    font-size: 1rem; }
+    font-size: 1rem;
+    border-bottom: #000 5px solid; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -347,7 +349,7 @@ main {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(255, 255, 255, 0.7); }
+      background: rgba(255, 255, 255, 0.5); }
   main#contact {
     background: url(../img/background_contact-light.jpg);
     background-size: cover;
@@ -400,11 +402,17 @@ main {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(255, 255, 255, 0.7); }
+      background: rgba(255, 255, 255, 0.5); }
   .contact-text-small {
     font-size: 1.2rem; }
   main {
     padding: 3rem 1rem; }
+  #bg-img {
+    background-image: url(../img/background_mobile.jpg);
+    background-size: cover; }
+  main#home {
+    background-image: url(../img/background_wheel.jpg);
+    background-size: cover; }
   main#home h1 {
     margin-top: 10vh; }
   #contact {

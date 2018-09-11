@@ -99,6 +99,14 @@
   main {
     padding: 3rem 1rem;
   }
+  #bg-img {
+    background-image: url(../img/background_mobile.jpg);
+    background-size: cover;
+  }
+  main#home {
+    background-image: url(../img/background_wheel.jpg);
+    background-size: cover;
+  }
   main#home h1 {
     margin-top: 10vh;
   }

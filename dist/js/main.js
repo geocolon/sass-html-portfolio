@@ -35,8 +35,6 @@ function toggleMenu() {
 // To close menu after click
 navItems.forEach(item =>
   item.addEventListener("click", function() {
-    console.log("Here");
-
     if (!showMenu) {
       menuBtn.classList.add("close");
       menu.classList.add("show");
